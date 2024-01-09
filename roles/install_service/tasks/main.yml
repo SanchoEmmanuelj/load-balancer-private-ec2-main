@@ -1,0 +1,9 @@
+- name: install nginx
+  apt:
+    name: nginx
+    state: latest
+
+- name: install php to run our code
+  apt:
+    name: php8.1-fpm
+    state: latest

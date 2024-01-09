@@ -1,0 +1,15 @@
+- name: copy the nginx default file to server
+  copy:
+    src: default
+    dest: /etc/nginx/sites-available
+    owner: root
+    group: root
+    mode: 0744
+
+- name: copy the php file to print hostname to server
+  copy:
+    src: index.php
+    dest: /var/www/html
+    owner: root
+    group: root
+    mode: 0744

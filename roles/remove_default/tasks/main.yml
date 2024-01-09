@@ -1,0 +1,9 @@
+- name: remove the nginx file
+  file:
+    path: /var/www/html/index.nginx-debian.html
+    state: absent
+
+- name: remove the default nginx file
+  file:
+    path: /etc/nginx/sites-available/default
+    state: absent
